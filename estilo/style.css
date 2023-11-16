@@ -15,6 +15,98 @@
     padding: 0px;
     margin: 0px;
 }
-body{
-    font-family: 'Josefin Sans', sans-serif;
+body,html{
+    height: 100%;
 }
+body{
+    display: flex;
+    flex-direction: column;
+ 
+    font-family: 'Josefin Sans', sans-serif;
+    background: linear-gradient(135deg,  hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    background-attachment: fixed;
+}
+section{
+    height: 250px;
+    width: 100vw;
+    background: url(../images/hero-mobile.jpg) no-repeat center ;
+    background-size: cover;
+}
+header{
+    display: flex;
+    align-items: center;
+    height: 75px;
+}
+header img{
+    width: 105.33px;
+    height: 22px;
+    padding-left: 25px;
+    
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: var(--cor0);
+    align-self: center;
+    justify-content: center;
+    
+}
+main h1{
+    width: 300px;
+    font-size: 2.5rem;
+    letter-spacing: 10px;
+    line-height: 45px;
+    margin: 60px 0px 30px 0px;
+}
+main p{
+    width: 350px;
+    line-height: 25px;
+}
+.com-mao{
+    color: black;
+}
+form{
+    position: relative;
+}
+input{
+    height: 40px;
+    width: 330px;
+    padding: 0px 20px;
+    margin-top: 30px;
+    border-radius: 25px;
+    font-family: 'Josefin Sans', sans-serif;
+    border: 1px solid var(--cor0);
+    background: linear-gradient(135deg,  hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+}
+button{
+    position:absolute;
+    top: 40%;
+    right: 0;
+    width: 65px;
+    height: 45px;
+    border-radius: 25px;
+    background: linear-gradient(135deg,  hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    border: none;
+    cursor: pointer;
+}
+.icon-erro{
+    display: none;
+    position: absolute;
+    top: 55%;
+    right: 20%;
+}
+.text-erro{
+    display: none;
+    text-align: left;
+    color: red;
+}
+#iemail:focus {
+  outline:none; /* Remova a borda de foco padrão, se desejar */
+}
+
+/*
+Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%)
+Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%)
+*/

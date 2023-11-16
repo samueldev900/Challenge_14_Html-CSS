@@ -1,0 +1,9 @@
+
+@media screen and (max-width: 390px) {
+    section{
+    height: 250px;
+    width: 100vw;
+    background: url(../images/hero-mobile.jpg) no-repeat center ;
+    background-size: cover;
+}
+}
