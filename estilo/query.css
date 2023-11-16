@@ -1,5 +1,5 @@
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 500px) {
     section{
     height: 250px;
     width: 100vw;
@@ -7,3 +7,69 @@
     background-size: cover;
 }
 }
+@media screen and (min-width: 1440px) {
+    body,html{
+        height: 100vh;
+    }
+    body{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    button:hover{
+        background: hsl(0, 58%, 68%);
+    }
+    main{
+        position: relative;
+        grid-row: 1;
+        height: 100vh;
+        width: 60vw;
+    }
+    section{
+        height: 100vh;
+        width: 40vw;
+        background: url(../images/hero-desktop.jpg)no-repeat;
+        background-size: cover;
+    }
+    header{
+        display: none;
+    }
+    .logo-desktop{
+        width: 200px;
+        position: absolute;
+        top: 20%;
+        left: calc(50% - 200px);
+        margin-right: 150px;
+        display: block;
+    }
+    main{
+        text-align: left;
+    }
+    main h1{
+        font-size: 3.5rem;
+        line-height: 65px;
+    }
+    main p{
+        width: 450px;
+        line-height: 25px;
+    }
+    article{
+        display: block;
+        width: 400px;
+    }
+    .attribution { 
+        position: absolute;
+        bottom: 0;
+
+    }
+    .text-erro{
+        margin:10px 0px 0px 40px;
+    }
+    button{
+        right: calc(25% - 65px);
+    }
+    .icon-erro{
+        right: calc(35% - 24px);
+    }
+}
+
+

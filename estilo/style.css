@@ -2,7 +2,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
 
-.attribution { font-size: 11px; text-align: center; }
+.attribution { font-size: 11px; text-align: center;
+}
 .attribution a { color: hsl(228, 45%, 44%); }
 
 :root{
@@ -15,9 +16,6 @@
     padding: 0px;
     margin: 0px;
 }
-body,html{
-    height: 100%;
-}
 body{
     display: flex;
     flex-direction: column;
@@ -28,9 +26,10 @@ body{
 }
 section{
     height: 250px;
-    width: 100vw;
+    width: 100%;
     background: url(../images/hero-mobile.jpg) no-repeat center ;
-    background-size: cover;
+    background-size: contain;
+    background-color: hsla(0, 36%, 70%, 0.719);
 }
 header{
     display: flex;
@@ -47,10 +46,12 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    width: 375px;
     text-align: center;
     color: var(--cor0);
     align-self: center;
-    justify-content: center;
+    
     
 }
 main h1{
@@ -64,6 +65,12 @@ main p{
     width: 350px;
     line-height: 25px;
 }
+article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 375px;
+}
 .com-mao{
     color: black;
 }
@@ -72,7 +79,7 @@ form{
 }
 input{
     height: 40px;
-    width: 330px;
+    width: 300px;
     padding: 0px 20px;
     margin-top: 30px;
     border-radius: 25px;
@@ -83,13 +90,14 @@ input{
 button{
     position:absolute;
     top: 40%;
-    right: 0;
+    right: -1%;
     width: 65px;
     height: 45px;
     border-radius: 25px;
     background: linear-gradient(135deg,  hsl(0, 80%, 86%), hsl(0, 74%, 74%));
     border: none;
     cursor: pointer;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.39);
 }
 .icon-erro{
     display: none;
@@ -101,10 +109,15 @@ button{
     display: none;
     text-align: left;
     color: red;
+ 
 }
 #iemail:focus {
   outline:none; /* Remova a borda de foco padrão, se desejar */
 }
+.logo-desktop{
+    display: none;
+}
+
 
 /*
 Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%)

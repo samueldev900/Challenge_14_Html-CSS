@@ -18,34 +18,36 @@
     <img src="images/logo.svg" alt="icon-logo">
   
   </header>
-  <section>
-   
-  </section>
-  <main>
-    <h1>WE'RE <span class="com-mao">COMING SOON</span></h1>
-    <p>
-      Hello fellow shoppers! We're currently building our new fashion store.
-      Add your email below to stay up-to-date with announcements and our launch deals.
-      
-    </p>
-    <form >
-      <input type="email" name="email" id="iemail" placeholder="Email Address" required oninput="emailValidate()">
-    
-      <img class="icon-erro" id="ierro-icon" src="images/icon-error.svg" alt="icon-error">
-      <button onclick="emailValidate()"><img src="images/icon-arrow.svg" alt="icon-arrow"></button>
-    </form>
-    <span class="text-erro" id="itext-erro">
-      <p>Preencha o campo corretamente !</p>
-    </span>
+    <section>
 
-    
+    </section>
+
+  <main>
+    <article class="logo-desktop">
+      <img src="images/logo.svg" alt="logo">
+    </article>
+    <article>
+      <h1>WE'RE <span class="com-mao">COMING SOON</span></h1>
+      <p>
+        Hello fellow shoppers! We're currently building our new fashion store.
+        Add your email below to stay up-to-date with announcements and our launch deals.
+      
+      </p>
+      <form >
+        <input type="email" name="email" id="iemail" placeholder="Email Address" required oninput="emailValidate()">
+      
+        <img class="icon-erro" id="ierro-icon" src="images/icon-error.svg" alt="icon-error">
+        <button onclick="emailValidate()"><img src="images/icon-arrow.svg" alt="icon-arrow"></button>
+      </form>
+      <span class="text-erro" id="itext-erro">
+        <p>Please provide a valid email !</p>
+      </span>
+    </article>
+        <p class="attribution">
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+          Coded by <a href="https://github.com/samueldev900" target="_blank">Samuel Oliveira</a>.
+        </p>
   </main>
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="https://github.com/samueldev900" target="_blank">Samuel Oliveira</a>.
-    </p>
-  </footer>
   <script>
     var inputEmail = document.getElementById("iemail");
     var icon =document.getElementById("ierro-icon")
